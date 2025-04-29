@@ -48,6 +48,7 @@ Another improvement for caching is setting a timeout when the cache is refreshed
 Storing response codes as metrics, such as timeout, bad requests, internal errors, no content etc.
 Project is setup for easy extensibility using inheritance for the api connectors.
 Another change would be to remove the get function from the api class into a single function in a utility script, the cache does not need to be specific to a connector object and can be a dictionary of urls mapped to parsed json result. This allows the function to be mocked for testing making it easier to write tests for the api connectors and results when set data can be returned.
+Also would add more tests and checks for data validation for the returned results from the apis. There may be edge cases somes values are string or not valid numbers and would crash the application.
 
 
 
