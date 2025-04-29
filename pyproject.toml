@@ -1,0 +1,31 @@
+[project]
+name = "currency-api"  
+version = "1.0.0"  
+description = "Exchange rate api that uses multiple sources for rates"  
+readme = "README.md" 
+requires-python = ">=3.7"
+license = {file = "LICENSE"}
+
+maintainers = [
+  {name = "Kevin Langbroek", email = "kevin.langbroek1@gmail.com" } 
+]
+
+dependencies = [
+  'flask', 'waitress'
+]
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools]
+package-dir = {""= "src"}
+
+
+[project.urls] 
+"Homepage" = "https://github.com/Langbroek/currency-api"
+
+[build-system]
+requires = ["setuptools>=43.0.0",  "wheel", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+

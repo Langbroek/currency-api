@@ -1,0 +1,2 @@
+from .frankfurter_connector import FrankfurterConnector
+from .freecurrency_connector import FreeCurrencyExchangeRatesConnector
